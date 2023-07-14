@@ -1,0 +1,19 @@
+.auths__input {
+  max-width: 358px;
+  min-height: 27px;
+  z-index: 4;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #cccccc;
+  padding: 0px;
+  margin-top: 0px;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: initial;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,31 @@
+.groups {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 282px;
+    margin: 0px 19px 48px 19px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 321px) {
+    .groups {
+        margin: 0px auto 48px;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .groups {
+        max-width: 580px;
+        display: grid;
+        grid-template-columns: 280px 280px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .groups {
+        max-width: 880px;
+        grid-template-columns: 282px 282px 282px;
+        column-gap: 17px;
+        margin-bottom: 66px;
+    }
+}

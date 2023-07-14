@@ -1,0 +1,33 @@
+.popup__button-rectangle {
+    min-width: 238px;
+    min-height: 46px;
+    background: #000000;
+    border-radius: 2px;
+    z-index: 4;
+    margin: 47px 0px 25px 0px;
+    padding: 0px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+.popup__button-rectangle:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+    .popup__button-rectangle {
+        align-self: center;
+        margin: 32px 0px 0px 0px;
+        min-width: 358px;
+        min-height: 50px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

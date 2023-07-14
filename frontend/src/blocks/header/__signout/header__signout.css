@@ -1,0 +1,23 @@
+.header__signout {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #a9a9a9;
+  background-color: black;
+  text-decoration: none;
+  padding-bottom: 40px;
+}
+
+.header__signout:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .header__signout {
+  padding-bottom: 46px;
+  padding-top: 6px;
+  }
+}

@@ -1,0 +1,12 @@
+.popup__notification-title {
+  background-color: #ffffff;
+  margin: 32px 36px 60px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  max-width: 358px;
+}

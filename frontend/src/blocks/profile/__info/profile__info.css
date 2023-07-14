@@ -1,0 +1,48 @@
+.profile__info {
+    max-width: 282px;
+    display: grid;
+    grid-template-columns: 235px 37px;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 8px;
+    align-content: center;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+@media screen and (min-width: 540px) {
+    .profile__info {
+        max-width: 500px;
+        grid-template-columns: 240px 30px;
+        column-gap: 12px;
+        row-gap: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile__info {
+        max-width: 316px;
+        grid-template-columns: 265px 30px;
+        column-gap: 14px;
+        row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile__info {
+        max-width: 327px;
+        grid-template-columns: 280px 27px;
+        column-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .profile__info {
+        max-width: 336px;
+        grid-template-columns: 294px 24px;
+        column-gap: 18px;
+        row-gap: 6px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+}

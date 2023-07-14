@@ -1,0 +1,10 @@
+.auths {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}

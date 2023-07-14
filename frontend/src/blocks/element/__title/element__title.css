@@ -1,0 +1,19 @@
+.element__title {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    max-width: 246px;
+    z-index: 2;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 21px;
+    margin-right: 15px;
+    margin-top: 24px;
+    padding: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
