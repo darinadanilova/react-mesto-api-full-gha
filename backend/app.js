@@ -13,7 +13,7 @@ const {
   MONGODB,
 } = require('./utils/config');
 const errorHandler = require('./middlwares/error');
-const { requestLogger, errorLogger } = require('./middlewares/logger');
+const { requestLogger, errorLogger } = require('./middlwares/logger');
 
 const app = express();
 app.use(express.json());
