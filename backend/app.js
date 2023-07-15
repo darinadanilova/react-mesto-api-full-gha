@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const rateLimit = require('express-rate-limit');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const { errors } = require('celebrate');
 const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
@@ -12,6 +13,7 @@ const {
   MONGODB,
 } = require('./utils/config');
 const errorHandler = require('./middlwares/error');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 app.use(express.json());
@@ -22,6 +24,8 @@ const limiter = rateLimit({
   legacyHeaders: false,
 });
 
+app.use(cors());
+
 app.use(limiter);
 app.use(helmet());
 
@@ -29,9 +33,19 @@ mongoose.connect(MONGODB, {
   useNewUrlParser: true,
 });
 
+app.use(requestLogger);
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.use(cookieParser());
 
 app.use(router);
+
+app.use(errorLogger);
 
 app.use(errors());
 app.use(errorHandler);
