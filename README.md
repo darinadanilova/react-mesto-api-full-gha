@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 84.201.133.70
+IP-адрес 51.250.4.38
 
 Frontend https://darinadanilova.nomoredomains.xyz
 
