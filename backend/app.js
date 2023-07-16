@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const rateLimit = require('express-rate-limit');
 const mongoose = require('mongoose');
-const cors = require('cors');
+//const cors = require('cors');
 const { errors } = require('celebrate');
 const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
@@ -24,7 +24,7 @@ const limiter = rateLimit({
   legacyHeaders: false,
 });
 
-app.use(cors());
+//app.use(cors());
 
 app.use(limiter);
 app.use(helmet());
